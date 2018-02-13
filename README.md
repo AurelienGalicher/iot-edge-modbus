@@ -57,6 +57,7 @@ Dockerfiles are located under [Docker](https://github.com/Azure/iot-edge-modbus/
 ```
 
 #### Multi-stage build ###
+##### multi-stage build is not supported on all version of docker -- build externaly and adapt the dockerfile accordingly
 Run docker build with the following commands.
 ```sh
 $cd iot-edge-modbus/
@@ -64,6 +65,7 @@ $docker build -t "modbus:latest" -f Docker/<PlatForm>/Dockerfile-auto .
 ```
 
 #### Single-stage build ####
+##### single-stage build is not supported on all version of docker -- build externaly and adapt the dockerfile accordingly
 Run docker build with the following commands.
 ```sh
 $cd iot-edge-modbus/src/
